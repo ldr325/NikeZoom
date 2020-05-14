@@ -1,0 +1,70 @@
+#canvas-image {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+body,html{
+  margin: 0px;
+  background-color: /*#578BF2*/ #eee;
+  color: #2B2D26; /*#2A3030*/ /*#2B2D26*/ /*#95D982*/
+  font-family: "Arimo", sans-serif;
+  background-image: "seamless-hexagonal-pattern-geometric-vector-20382919.png";
+  background-image: image("seamless-hexagonal-pattern-geometric-vector-20382919.png");
+}
+
+body{
+  font-size: 24pt;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.RightWord{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.LeftWord{
+  display: flex;
+  justify-content: flex-end;
+}
+
+img{
+  width: 100%;
+}
+
+
+.item{
+  animation: RightWord 10s;
+  animation: LeftWord 10s;
+}
+
+@@keyframes RightWord {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+@@keyframes RightWord {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
